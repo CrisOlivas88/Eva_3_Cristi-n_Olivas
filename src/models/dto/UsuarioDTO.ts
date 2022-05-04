@@ -1,15 +1,12 @@
 export interface BaseUsuarioDTO{
-  id?: number
-  firstName: string
-  lastName: string
+  id: number
+  firstname: string
+  lastname: string
   email: string
   password: string
 }
 
-export interface UsuarioDTO extends BaseUsuarioDTO {
-  id: number
-  userId: number | null
-}
+export interface UsuarioDTO extends BaseUsuarioDTO {}
 
 export interface CreateUsuarioDTO extends BaseUsuarioDTO{}
 
