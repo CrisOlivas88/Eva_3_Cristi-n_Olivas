@@ -18,8 +18,9 @@ export default class UsuarioController{
   }
 
   public readonly create = async (req : Request, res: Response) => {
+    console.log(req.body);
     let usuario = req.body as UsuarioDTO
-
+    console.log(usuario);
     try{
       
       await createUsuarioSchema.validateAsync(usuario);
